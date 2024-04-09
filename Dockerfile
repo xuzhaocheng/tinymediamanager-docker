@@ -37,7 +37,8 @@ RUN \
         # workaround.
         #openjdk8-jre \
         libmediainfo \
-        ttf-dejavu \
+        ttf-dejavu \ 
+        inotify-tools \
         bash
 
 # Maximize only the main/initial window.
