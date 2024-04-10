@@ -5,10 +5,10 @@ FROM jlesage/baseimage-gui:alpine-3.12-glibc
 
 # Define software versions.
 ARG JAVAJRE_VERSION=8.342.07.4
-ARG TMM_VERSION=3.1.17
+ARG TMM_VERSION=3.1.18
 
 # Define software download URLs.
-ARG TMM_URL=https://release.tinymediamanager.org/v3/dist/tmm_${TMM_VERSION}_linux.tar.gz
+ARG TMM_URL=https://release.tinymediamanager.org/v${TMM_VERSION}/dist/tmm_${TMM_VERSION}_linux.tar.gz
 ARG JAVAJRE_URL=https://corretto.aws/downloads/resources/${JAVAJRE_VERSION}/amazon-corretto-${JAVAJRE_VERSION}-linux-x64.tar.gz
 ENV JAVA_HOME=/opt/jre/bin
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/jre/bin
@@ -69,5 +69,5 @@ LABEL \
       org.label-schema.name="tinymediamanager" \
       org.label-schema.description="Docker container for TinyMediaManager" \
       org.label-schema.version="unknown" \
-      org.label-schema.vcs-url="https://github.com/romancin/tmm-docker" \
+      org.label-schema.vcs-url="https://github.com/xuzhaocheng/tinymediamanager-docker" \
       org.label-schema.schema-version="1.0"
